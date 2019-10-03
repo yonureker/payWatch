@@ -11,9 +11,9 @@ export default function App() {
 }
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCEyI7UyACToUQfl4s1wR2cxUtpkkizkIE",
-  authDomain: "paywatch-fb176.firebaseapp.com",
-  databaseURL: "https://paywatch-fb176.firebaseio.com",
+  apiKey: "",
+  authDomain: "",
+  databaseURL: "",
   projectId: "paywatch-fb176",
   storageBucket: "",
 };
