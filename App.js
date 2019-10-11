@@ -1,30 +1,28 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, TextInput } from 'react-native';
+import firebaseConfig from './config.js';
 import * as firebase from 'firebase';
-
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
-  );
-}
-
-const firebaseConfig = {
-  apiKey: "",
-  authDomain: "",
-  databaseURL: "",
-  projectId: "paywatch-fb176",
-  storageBucket: "",
-};
 
 firebase.initializeApp(firebaseConfig);
 
+export default class App extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+
+  render() {
+    return (
+      <View className="first" style={styles.first}></View>
+    );
+  }
+}
+
 const styles = StyleSheet.create({
-  container: {
+  first: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
     justifyContent: 'center',
+    alignItems: 'center',
+    padding: 5
   },
 });
